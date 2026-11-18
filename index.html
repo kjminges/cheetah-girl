@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#20113b"><title>Cheetah Girl and the Evil Cha Cha</title>
+<style>
+:root{--ink:#26133d;--violet:#7531b4;--purple:#ac62e9;--sun:#ffcd42;--paper:#fff9ee;--shadow:0 18px 56px #140d2c32;font-family:ui-rounded,'Trebuchet MS',system-ui,-apple-system,sans-serif}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#160b2e;color:var(--ink)}button{font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible{outline:4px solid #fdb929;outline-offset:3px}body{background:radial-gradient(circle at 14% 10%,#503276 0%,transparent 34%),radial-gradient(circle at 88% 84%,#49306c 0%,transparent 36%),#180e2e}.app{width:min(1440px,100%);min-height:100dvh;display:flex;flex-direction:column;gap:10px;margin:auto;padding:12px clamp(10px,2.5vw,32px) 16px}.topbar{color:white;display:flex;align-items:center;justify-content:space-between;min-height:38px;gap:10px}.brand{font-weight:1000;font-size:clamp(12px,1.4vw,18px);letter-spacing:.03em;color:#ffe48d}.top-actions{display:flex;gap:8px;align-items:center}.top-btn{color:#e8d8ff;border:1px solid #ffffff3b;border-radius:999px;background:#ffffff14;padding:8px 14px;font-size:13px;font-weight:800}.top-btn:hover{background:#ffffff29}.book{width:100%;background:var(--paper);border-radius:20px;box-shadow:var(--shadow);overflow:hidden;border:3px solid #d7b0ff;position:relative}.art-zone{position:relative;background:#fff;line-height:0;overflow:hidden;isolation:isolate}.art{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;user-select:none;-webkit-user-drag:none;transform-origin:center}.art-area{position:relative}.art-zone.speed .art{animation:whoosh .55s ease-in-out}.art-zone.turn .art{animation:pageTurn .54s ease-out}.art-zone.transform .art{animation:transformReveal .82s cubic-bezier(.2,.7,.2,1)}.art-zone.bounce .art{animation:bump .45s ease}.art-zone.happy .art{animation:happy .48s ease}.art-zone.charge .art{animation:charged .75s ease}.art-zone.shake .art{animation:shake .6s ease}.art-zone.yawn .art{animation:yawn .72s ease}.art-zone.dim .art{filter:saturate(.7)}.art-zone.dim:after{content:'';position:absolute;inset:0;background:#6633a015;pointer-events:none}.art-zone.sleepyGlow .art{filter:saturate(.92) brightness(.98)}.art-zone.sleepyGlow:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#b86cff1c,#8f46e626 55%,#5f25ba1f);pointer-events:none}.vfx{position:absolute;inset:0;pointer-events:none;z-index:3;overflow:hidden}.vfx .ring{position:absolute;left:50%;top:54%;height:10%;width:10%;border:9px solid #ffca39;border-radius:50%;transform:translate(-50%,-50%) scale(.3);opacity:0;animation:shock .9s ease-out forwards;box-shadow:0 0 20px #ffc53a}.vfx .ring:nth-child(2){animation-delay:.16s}.vfx .ring:nth-child(3){animation-delay:.34s}.vfx .wave{position:absolute;left:-30%;width:160%;top:26%;height:16%;border-top:14px solid #b063f0aa;border-bottom:9px solid #dba0ff91;border-radius:50%;filter:drop-shadow(0 0 9px #d58aff);animation:waveAcross 1.5s ease-out both}.vfx .wave:nth-child(2){top:49%;animation-delay:.18s}.vfx .wave:nth-child(3){top:67%;animation-delay:.3s}.vfx .streak{position:absolute;left:-30%;top:38%;height:4%;width:130%;border-radius:999px;background:linear-gradient(90deg,transparent,#fff2a5,#ffd43c,transparent);transform:skewY(-10deg);animation:speedAcross .7s ease-out both;filter:drop-shadow(0 0 15px #ffd044)}.vfx .streak:nth-child(2){top:54%;animation-delay:.08s}.vfx .streak:nth-child(3){top:70%;animation-delay:.16s}.vfx .spark{position:absolute;font-size:clamp(20px,4vw,65px);line-height:1;animation:spark 1.25s ease-out both}.vfx .burst-label{position:absolute;top:23%;left:50%;transform:translate(-50%,-50%) rotate(-6deg);white-space:nowrap;background:#ffce39;color:#451176;border:5px solid white;outline:4px solid #6c248e;border-radius:18px;padding:12px 25px;line-height:1.1;font-weight:1000;font-size:clamp(23px,5vw,64px);animation:pop .85s cubic-bezier(.2,1.8,.3,1) both;box-shadow:0 12px 30px #250d5666}.vfx .float-label{position:absolute;top:13%;right:15%;font-weight:1000;color:white;text-shadow:2px 4px 0 #6b24a0,0 0 12px #fff;font-size:clamp(23px,4vw,55px);line-height:1.1;animation:pop .7s both}.vfx .lap{position:absolute;bottom:8%;right:8%;color:#fff;background:#7028b9;border:4px solid #fbd43e;border-radius:999px;padding:10px 20px;font-weight:1000;line-height:1;font-size:clamp(18px,3vw,38px);animation:pop .55s both}.vfx .confetti{position:absolute;top:-10%;height:14px;width:9px;opacity:.95;animation:confetti 2s linear forwards}.hotspot{position:absolute;z-index:5;display:block;background:transparent;border:0;border-radius:20px;color:transparent;line-height:normal}.hotspot:hover,.hotspot:focus-visible{outline:3px dashed #ffe769;outline-offset:2px;background:#ffdd4b22}.cover-prompt{position:absolute;z-index:5;bottom:3%;left:50%;transform:translateX(-50%);border:2px solid white;background:#34135cda;color:white;border-radius:999px;padding:9px 18px;font-size:clamp(11px,1.4vw,18px);font-weight:900;line-height:1.1;box-shadow:0 8px 22px #11052b60;white-space:nowrap}.copy-zone{background:linear-gradient(#fffdf7,#fff6e6);border-top:3px solid #e3c5ed;padding:14px clamp(16px,3.5vw,43px) 16px;display:flex;flex-direction:column;gap:8px}.section-kicker{color:#8b4b9e;font-size:clamp(10px,1.1vw,13px);letter-spacing:.1em;font-weight:1000;text-transform:uppercase}.story-title{font-weight:1000;font-size:clamp(21px,2.6vw,33px);line-height:1.08;margin:0;letter-spacing:-.025em}.story-prose{font-size:clamp(16px,1.7vw,21px);line-height:1.46;max-height:clamp(138px,24vh,265px);overflow-y:auto;overscroll-behavior:contain;padding-right:12px;scrollbar-color:#be96de #eee0f5}.story-prose p{margin:0 0 8px}.story-prose p:last-child{margin-bottom:2px}.story-prose .shout{color:#7a2ca4;font-weight:1000;letter-spacing:.01em}.story-prose .dramatic{font-size:1.17em;color:#7a259c;font-weight:1000}.hint{font-size:13px;color:#62476f;font-weight:750;display:flex;align-items:center;gap:10px;flex-wrap:wrap}.magic-btn{border:0;background:#f3e0ff;color:#62227d;border-radius:999px;padding:9px 15px;font-weight:900;box-shadow:inset 0 0 0 1px #d4a3f2;transition:transform .18s}.magic-btn:hover{transform:translateY(-2px);background:#ebcbff}.magic-btn:active{transform:scale(.95)}.footer{display:flex;align-items:center;justify-content:space-between;gap:12px}.nav{border:2px solid #f7cb4e;background:#ffcd46;color:#391653;font-weight:1000;border-radius:14px;padding:12px clamp(14px,3vw,30px);font-size:clamp(14px,1.6vw,19px);box-shadow:0 5px 0 #e2a73f;min-width:114px}.nav:disabled{opacity:.3;cursor:default;box-shadow:none}.nav:not(:disabled):hover{background:#ffe076;transform:translateY(-1px)}.nav:not(:disabled):active{transform:translateY(4px);box-shadow:0 1px 0 #e2a73f}.footer-mid{color:#eee0fc;text-align:center;font-size:13px;font-weight:700}.start-btn{background:#ffcc43;color:#3d1763;border:3px solid #512071;border-radius:14px;padding:12px 22px;font-weight:1000;font-size:17px;box-shadow:0 5px 0 #6c3c83}.start-btn:hover{background:#ffe38e}.cover-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.small{color:#62466e;font-size:14px}.replay{border:1px solid #ad8cc7;color:#7525a2;border-radius:9px;background:white;padding:7px 12px;font-weight:800}.ending{color:#7427a0;font-size:1.18em;font-weight:1000;letter-spacing:.04em}.character-menu{display:flex;flex-wrap:wrap;gap:7px}.charlink{border:1px solid #d4a6ee;background:white;color:#682a98;border-radius:99px;padding:7px 10px;font-weight:800;font-size:12px}.charlink:hover{background:#efddff}.desktop-hint{color:#bdb0d0;font-size:11px;text-align:center}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@keyframes pageTurn{from{transform:perspective(1300px) rotateY(-10deg) scale(.97);opacity:.45;filter:brightness(1.13)}to{transform:perspective(1300px) rotateY(0) scale(1);opacity:1;filter:none}}@keyframes whoosh{0%{transform:translateX(9%) scale(1.08);filter:blur(14px)}65%{transform:translateX(-1%) scale(1.02);filter:blur(1px)}100%{transform:none;filter:none}}@keyframes transformReveal{0%{transform:scale(.76);filter:brightness(5) blur(14px)}48%{filter:brightness(2.2) blur(2px)}100%{transform:scale(1);filter:none}}@keyframes bump{0%,100%{transform:none}18%{transform:translate(8px,7px) rotate(1deg)}40%{transform:translate(-8px,-7px) rotate(-1deg)}68%{transform:translate(3px,2px)}}@keyframes happy{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}@keyframes charged{0%,100%{filter:none}50%{filter:contrast(1.08) saturate(1.5) brightness(1.14)}}@keyframes shake{0%,100%{transform:none}20%{transform:translate(-7px,0)}40%{transform:translate(7px,0)}60%{transform:translate(-5px,0)}80%{transform:translate(5px,0)}}@keyframes yawn{0%,100%{filter:none}45%{filter:hue-rotate(12deg) brightness(.94)}}@keyframes shock{0%{opacity:1;transform:translate(-50%,-50%) scale(.3)}100%{opacity:0;transform:translate(-50%,-50%) scale(13)}}@keyframes waveAcross{0%{opacity:0;transform:translateX(-25%) scale(.85)}20%{opacity:1}100%{opacity:0;transform:translateX(25%) scale(1.3)}}@keyframes speedAcross{0%{opacity:0;transform:translateX(-60%)}30%{opacity:1}100%{opacity:0;transform:translateX(90%)}}@keyframes spark{0%{opacity:0;transform:translateY(30px) scale(.3) rotate(-60deg)}45%{opacity:1}100%{opacity:0;transform:translateY(-75px) scale(1.5) rotate(45deg)}}@keyframes pop{0%{opacity:0;scale:.3}60%{opacity:1;scale:1.15}100%{opacity:1;scale:1}}@keyframes confetti{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(70vh) rotate(750deg);opacity:0}}
+@media(min-width:1100px) and (max-height:820px){.app{max-width:1100px}.story-prose{max-height:195px}}@media(max-width:650px){.app{padding:8px 6px;gap:8px}.book{border-radius:12px;border-width:2px}.copy-zone{padding:12px 15px}.story-title{font-size:21px}.story-prose{font-size:16px;max-height:32vh}.nav{min-width:92px;padding:12px}.topbar{padding:0 7px}.cover-prompt{font-size:10px;padding:7px 10px}.footer-mid{font-size:11px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Cover — illustration-first presentation with staged comic-book logo overlays. */
+.book.is-cover .copy-zone{display:none}
+.cover-overlay{position:absolute;z-index:4;pointer-events:none;opacity:0;visibility:hidden;will-change:transform,opacity;filter:drop-shadow(0 5px 8px rgba(36,10,67,.36));}
+.cover-overlay.title-overlay{left:18%;top:1.5%;width:46%;transform:translateY(-32%) scale(.38) rotate(-8deg);transform-origin:50% 50%;}
+.cover-overlay.byline-overlay{left:1.7%;bottom:6%;width:35%;transform:translateX(-38%) scale(.45) rotate(-9deg);transform-origin:40% 55%;}
+.book.is-cover.cover-revealed .cover-overlay{visibility:visible;opacity:1;}
+.book.is-cover.cover-revealed .title-overlay{animation:coverTitleSlam .72s cubic-bezier(.21,1.65,.31,1) both;}
+.book.is-cover.cover-revealed .byline-overlay{animation:coverBylinePop .67s cubic-bezier(.2,1.65,.3,1) .33s both;}
+.book.is-cover .cover-prompt{z-index:7;font-size:clamp(13px,1.7vw,21px);padding:11px 22px;bottom:2.8%;background:#ffcb40;color:#431367;border:3px solid #602481;box-shadow:0 5px 0 #612c80,0 10px 26px #1c0b4a88;}
+.book.is-cover .cover-prompt:hover{background:#ffe474;transform:translateX(-50%) translateY(-2px)}
+.book.is-cover .cover-prompt:active{transform:translateX(-50%) translateY(3px);box-shadow:0 2px 0 #612c80}
+@keyframes coverTitleSlam{0%{opacity:0;transform:translateY(-36%) scale(.38) rotate(-10deg)}64%{opacity:1;transform:translateY(2%) scale(1.12) rotate(2deg)}83%{transform:translateY(-1%) scale(.95) rotate(-1deg)}100%{opacity:1;transform:translateY(0) scale(1) rotate(0)}}
+@keyframes coverBylinePop{0%{opacity:0;transform:translateX(-45%) scale(.45) rotate(-12deg)}70%{opacity:1;transform:translateX(2%) scale(1.11) rotate(2deg)}100%{opacity:1;transform:translateX(0) scale(1) rotate(0)}}
+@media(prefers-reduced-motion:reduce){.book.is-cover.cover-revealed .cover-overlay{opacity:1;transform:none;animation:none}}
+
+/* v1.2 — comic-cut frame + washed lavender book backdrop */
+html, body { background: #e9e1f0; }
+body { background: radial-gradient(ellipse at 16% 8%, #f8f3fa 0%, transparent 48%), radial-gradient(ellipse at 88% 92%, #dcd0e8 0%, transparent 54%), #e9e1f0; }
+.topbar { color: #42225b; }
+.brand { color: #54276d; text-shadow: 0 1px 0 #ffffffa6; }
+.top-btn { color: #542b71; border: 1px solid #9c7aae66; background: #ffffffa8; }
+.top-btn:hover { background: #ffffffed; }
+.footer-mid { color: #654b78; }
+.desktop-hint { color: #7c698e; }
+.book {
+  border-radius: 0;
+  border: 0;
+  background: #77439c;
+  padding: 4px;
+  clip-path: none;
+  box-shadow: none;
+  overflow: hidden;
+  filter: drop-shadow(0 10px 22px #3e205022);
+}
+.book::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--paper);
+  clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+  z-index: 0;
+}
+.book > * {
+  position: relative;
+  z-index: 1;
+}
+@media(max-width:650px) {
+ .book { padding: 3px; }
+ .book::before { inset: 3px; clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); }
+}
+
+/* v1.3 — top navigation matches the yellow page-turn buttons */
+.top-btn {
+  color: #391653;
+  border: 2px solid #f7cb4e;
+  border-radius: 14px;
+  background: #ffcd46;
+  padding: 10px 18px;
+  font-size: clamp(13px,1.25vw,17px);
+  font-weight: 1000;
+  box-shadow: 0 5px 0 #e2a73f;
+  transition: background .15s,transform .15s,box-shadow .15s;
+}
+.top-btn:hover { background: #ffe076; transform: translateY(-1px); }
+.top-btn:active { transform: translateY(4px); box-shadow: 0 1px 0 #e2a73f; }
+@media(max-width:650px) {
+  .top-btn { padding: 8px 11px; font-size: 12px; }
+  .top-actions { gap: 6px; }
+  .brand { font-size: 10px; }
+}
+/* v1.4 — make the two header navigation buttons equal height */
+.top-actions { align-items: stretch; }
+.top-actions .top-btn { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; }
+@media (max-width:650px) { .top-actions .top-btn { min-height: 43px; } }
+
+/* Page 5 of the story: comic-style yawn bubble */
+.vfx .yawn-bubble {
+ position:absolute; left:47%; top:9%; z-index:4;
+ max-width:48%; padding:clamp(9px,1.25vw,20px) clamp(14px,2vw,33px);
+ background:#fffefa; color:#2c1737; border:clamp(2px,.35vw,5px) solid #2c1737;
+ border-radius:47% 53% 42% 58% / 53% 48% 52% 47%;
+ font-weight:1000; font-size:clamp(15px,3.2vw,47px); line-height:1.1;
+ letter-spacing:.025em; white-space:nowrap;
+ text-shadow:2px 2px 0 #eedaf6;
+ transform-origin:20% 95%; animation:comicYawn 1s cubic-bezier(.18,1.5,.32,1) both;
+ filter:drop-shadow(4px 5px 0 #5f2974a1);
+}
+.vfx .yawn-bubble::before, .vfx .yawn-bubble::after {
+ content:'';position:absolute;background:#fffefa;border:3px solid #2c1737;border-radius:50%;
+}
+.vfx .yawn-bubble::before {width:18px;height:18px;left:14%;bottom:-22px;}
+.vfx .yawn-bubble::after {width:9px;height:9px;left:9%;bottom:-40px;}
+@keyframes comicYawn {0%{opacity:0;transform:scale(.2) rotate(-13deg)}68%{opacity:1;transform:scale(1.12) rotate(3deg)}100%{opacity:1;transform:scale(1) rotate(-2deg)}}
+
+/* v1.6 — extra story-page interaction styling */
+.vfx .zzz-pop{position:absolute;transform:translate(-50%,-50%);font-weight:1000;color:#2d1742;
+  text-shadow:2px 2px 0 #fff7,0 0 10px #fff;font-size:clamp(18px,3vw,46px);
+  animation:zzzFloat 1.25s ease-out both}
+@keyframes zzzFloat{0%{opacity:0;transform:translate(-50%,10%) scale(.35) rotate(-12deg)}18%{opacity:1}100%{opacity:0;transform:translate(-50%,-120%) scale(1.12) rotate(8deg)}}
+.vfx .power-burst{position:absolute;transform:translate(-50%,-50%);width:clamp(42px,7vw,92px);height:clamp(42px,7vw,92px);
+  clip-path:polygon(50% 0%,63% 19%,85% 6%,81% 29%,100% 34%,84% 50%,100% 66%,80% 72%,85% 94%,63% 82%,50% 100%,37% 82%,15% 94%,20% 72%,0% 66%,16% 50%,0% 34%,19% 29%,15% 6%,37% 19%);
+  background:#fff7d9;box-shadow:0 0 0 4px #ffd548,0 0 0 8px #7a2ca4,0 0 18px #ffe088;animation:powPulse .8s cubic-bezier(.2,1.1,.3,1) both}
+@keyframes powPulse{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(-25deg)}65%{opacity:1;transform:translate(-50%,-50%) scale(1.12) rotate(6deg)}100%{opacity:0;transform:translate(-50%,-50%) scale(1) rotate(0)}}
+.vfx .quinn-wave{position:absolute;transform:translate(-50%,-50%) rotate(8deg);border-radius:50%;background:transparent;
+  border:clamp(5px,.65vw,10px) solid;border-left-color:transparent !important;animation:waveSpeak .75s ease-out both}
+@keyframes waveSpeak{0%{opacity:0;transform:translate(-50%,-50%) scale(.45) rotate(8deg)}25%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(1.12) rotate(8deg)}}
+.vfx .baby-ray{position:absolute;transform:translate(-50%,-50%);height:clamp(6px,.9vw,12px);border-radius:999px;
+  background:linear-gradient(90deg,#fff6c4 0%,#ffd653 38%,#fffef0 100%);box-shadow:0 0 12px #fff0a7,0 0 20px #ffd95e;animation:rayFlash .9s ease-out both}
+@keyframes rayFlash{0%{opacity:0;filter:brightness(1.4);transform:translate(-50%,-50%) scaleX(.25)}20%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scaleX(1.08)}}
+
+/* v1.8: image-based BOOM burst for the switch smash */
+.vfx .boom-overlay{position:absolute;left:31%;top:28%;transform:translate(-50%,-50%) rotate(-8deg);
+  width:clamp(180px,31%,470px);height:auto;object-fit:contain;
+  animation:boomOverlay .82s cubic-bezier(.18,1.45,.26,1) both;z-index:4;
+  filter:drop-shadow(0 14px 24px rgba(95,23,17,.28)) drop-shadow(0 0 22px rgba(255,202,67,.45));}
+@keyframes boomOverlay{0%{opacity:0;transform:translate(-50%,-50%) scale(.18) rotate(-24deg)}65%{opacity:1;transform:translate(-50%,-50%) scale(1.12) rotate(5deg)}100%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(-8deg)}}
+
+/* v1.7: Cheetah-paw lightbulb thought balloon on Page 12 */
+.vfx .paw-thought {position:absolute;top:4%;left:31%;width:clamp(105px,20%,260px);aspect-ratio:1.33;
+  background:#fffdf8;border:clamp(3px,.45vw,6px) solid #3b164f;border-radius:48% 52% 46% 54% / 55% 45% 55% 45%;
+  box-shadow:0 7px 0 #6d35a66b,0 0 0 5px #ffe27670;display:grid;place-items:center;
+  animation:pawThoughtPop .8s cubic-bezier(.15,1.5,.25,1) both;transform-origin:25% 100%;}
+.vfx .paw-thought svg {width:66%;height:82%;overflow:visible;filter:drop-shadow(0 2px 0 #fff7c6)}
+.vfx .paw-thought:before,.vfx .paw-thought:after {content:'';position:absolute;border:3px solid #3b164f;background:#fffdf8;border-radius:50%}
+.vfx .paw-thought:before {width:15%;height:20%;left:12%;bottom:-22%}
+.vfx .paw-thought:after {width:8%;height:11%;left:2%;bottom:-37%}
+@keyframes pawThoughtPop{0%{opacity:0;transform:scale(.12) rotate(-14deg)}66%{opacity:1;transform:scale(1.12) rotate(3deg)}100%{opacity:1;transform:scale(1) rotate(-2deg)}}
+.book.illustration-only .copy-zone{display:none;}
+</style></head><body><main class="app" id="app"><header class="topbar"><span class="brand">🐾 CHEETAH GIRL · THE INTERACTIVE STORYBOOK</span><div class="top-actions"><button class="top-btn" id="homeBtn">⌂ Home</button><button class="top-btn" id="charsBtn">Meet the heroes</button></div></header><section class="book" id="bookShell" aria-label="Illustrated story page"><div class="art-zone" id="artZone"><img class="art" id="artImg" draggable="false" alt=""/><div class="vfx" id="vfx" aria-hidden="true"></div><img class="cover-overlay title-overlay" id="coverTitleArt" src="assets/Title.png" alt="Cheetah Girl and the Evil Cha Cha"/><img class="cover-overlay byline-overlay" id="coverBylineArt" src="assets/By-line.png" alt="By Uncle Kurtie and Aunt Beaaa"/><div id="hotspots"></div><button class="cover-prompt" id="coverPrompt" hidden>✦ Tap a hero to meet them!</button></div><div class="copy-zone"><div class="section-kicker" id="section"></div><h1 class="story-title" id="title"></h1><div class="story-prose" id="prose" aria-live="polite"></div><div class="hint" id="hint"></div></div></section><footer class="footer"><button class="nav" id="prevBtn">❮ Back</button><div class="footer-mid" id="footerMid">An adventure starring Ella and the Super Siblings</div><button class="nav" id="nextBtn">Next ❯</button></footer><div class="desktop-hint">Made with love for Ella · Tap the magic if you like, or just turn the page ✨</div></main>
+<script>
+const pages=[{"key": "cover", "image": "Page_00.png", "title": "Cheetah Girl and the Evil Cha Cha", "kind": "cover", "text": [], "effect": "cover"}, {"key": "char0", "image": "Page_01a.png", "title": "Meet Ella / Cheetah Girl", "kind": "character", "text": ["Our fearless hero. Her superpower is SUPER SPEED!"], "effect": "character"}, {"key": "char1", "image": "Page_01b.png", "title": "Meet Luke", "kind": "character", "text": ["Ella’s big brother. His superpower is SUPER STRENGTH!"], "effect": "character"}, {"key": "char2", "image": "Page_01c.png", "title": "Meet Quinn", "kind": "character", "text": ["Her superpower is a mighty GIGGLE BOOM!"], "effect": "character"}, {"key": "char3", "image": "Page_01d.png", "title": "Meet Baby Blake & Cousin Connie", "kind": "character", "text": ["Two tiny heroes. Their superpower is adorable DISTRACTION!"], "effect": "character"}, {"key": "char4", "image": "Page_01e.png", "title": "Meet Evil Cha Cha", "kind": "character", "text": ["A very dramatic uncle with a very sleepy plan!"], "effect": "character"}, {"key": "Page_02", "image": "Page_02.png", "title": "Ella the Cheetah", "kind": "story", "act": "The Birth of Cheetah Girl", "text": ["Ella loved cheetahs.", "She loved their spots. She loved their ears. But most of all, she loved how FAST they could run!", "Every day, Ella put on her favorite cheetah ears and pretended she was the fastest girl in the world.", "There was just one problem..."], "effect": "none", "nextEffect": "turn"}, {"key": "Page_03", "image": "Page_03.png", "title": "Catch Me If You Can!", "kind": "story", "act": "The Birth of Cheetah Girl", "text": ["Her big brother Luke was FAST, too!", "\"Catch me if you can!\" Luke shouted, racing across the yard.", "\"WAIT FOR MEEEE!\" yelled Ella, running as fast as her little legs could go.", "She ran and ran and ran...", "Until—", "WHOOPS!"], "effect": "whoops", "nextEffect": "turn"}, {"key": "Page_04", "image": "Page_04.png", "title": "A Very Strange Surprise", "kind": "story", "act": "The Birth of Cheetah Girl", "text": ["Ella took a tumble!", "And when she stood back up, something very surprising had happened.", "She had lost a tooth!", "Luke hurried over to check on her.", "But before Ella could say a word, her cheetah ears began to tingle...", "Her sneakers began to sparkle...", "And suddenly—", "ZOOM!"], "effect": "zoom", "nextEffect": "speed"}, {"key": "Page_05", "image": "Page_05.png", "title": "Introducing… CHEETAH GIRL!", "kind": "story", "act": "The Birth of Cheetah Girl", "text": ["WHOOSH!", "Before Luke could blink, Ella was racing around the yard in a blur of yellow spots!", "Her cheetah ears had become a superhero mask. Her clothes had turned into a spotted suit. And a purple cape fluttered behind her.", "\"ELLA?! Is that YOU?!\" Luke shouted.", "Ella flashed her new toothless grin.", "\"Nope! I'm CHEETAH GIRL!\""], "effect": "reveal", "nextEffect": "turn"}, {"key": "Page_06", "image": "Page_06.png", "title": "Meanwhile, Uncle Cha Cha…", "kind": "story", "act": "The Sleepiest Villain in Town", "text": ["Meanwhile, across town, Uncle Cha Cha was trying to take a nap.", "But everywhere he went, children were PLAYING!", "\"WHEEEEE!\" shouted the children.", "\"WAAAAA!\" cried the babies.", "\"WOOF! WOOF!\" barked the dogs.", "Uncle Cha Cha covered his ears.", "\"HOW IS ANYONE SUPPOSED TO SLEEP WITH ALL THIS FUN GOING ON?!\""], "effect": "yawn", "nextEffect": "turn"}, {"key": "Page_07", "image": "Page_07.png", "title": "The Nap-inator 3000", "kind": "story", "act": "The Sleepiest Villain in Town", "text": ["Suddenly, Uncle Cha Cha had an idea.", "A TERRIBLE idea.", "A WONDERFULLY SLEEPY idea!", "\"If I have to be tired,\" he declared, \"EVERYONE has to be tired!\"", "He pulled out his greatest invention...", "THE NAP-INATOR 3000!", "With one giant flip of its purple switch—", "WHOOOOOOOSH!", "Sleepy waves rolled across the town!", "Children yawned. Grown-ups nodded off. Even the squirrels curled up for a snooze.", "Playtime was OVER!"], "effect": "sleep", "nextEffect": "turn"}, {"key": "Page_08", "image": "Page_08.png", "title": "Something Is Very Wrong!", "kind": "story", "act": "The Super Siblings Assemble", "text": ["Cheetah Girl raced into town—", "And skidded to a stop.", "The playground was quiet.", "The park was still.", "Everyone looked SLEEPY.", "Kids yawned on swings. Grown-ups snoozed on benches. Even the dogs were dozing in the grass.", "\"Something's wrong!\" said Ella.", "Then she spotted something strange...", "PURPLE WAVES floating through the air!"], "effect": "sleepies", "nextEffect": "turn"}, {"key": "Page_09", "image": "Page_09.png", "title": "The Secret Behind the Sleepiness", "kind": "story", "act": "The Super Siblings Assemble", "text": ["Cheetah Girl followed the purple waves through town.", "Around a corner...", "Past the fountain...", "And straight to—", "THE EVIL CHA CHA!", "He was standing beside a giant purple machine.", "\"The Nap-inator 3000!\" laughed Cha Cha. \"Soon everyone will be too sleepy to play!\"", "Ella wanted to stop him. But Uncle Cha Cha was a grown-up, and he was guarding the machine!", "\"I can't do this alone,\" she whispered.", "\"I need my SUPER SIBLINGS!\""], "effect": "none", "nextEffect": "turn"}, {"key": "Page_10a", "image": "Page_10a.png", "title": "The Super Siblings!", "kind": "story", "act": "The Super Siblings Assemble", "text": ["Ella raced to find her brother, sisters, and cousin.", "\"Uncle Cha Cha is putting the whole town to sleep!\" she cried. \"I need your help to save everyone!\""], "effect": "recruit", "nextEffect": "transform"}, {"key": "Page_10b", "image": "Page_10b.png", "title": "Meet the Super Team!", "kind": "story", "act": "The Super Siblings Assemble", "text": ["There was Luke, with his super strength!", "There was Quinn, with her mighty GIGGLE BOOM!", "And babies Blake and Connie, whose adorable distraction power could stop anyone in their tracks.", "\"Come on, team!\" shouted Ella.", "\"Let's save our town!\""], "effect": "team", "nextEffect": "speed"}, {"key": "Page_11a", "image": "Page_11a.png", "title": "Into the Park!", "kind": "story", "act": "The Super Siblings Assemble", "text": [], "effect": "dash", "nextEffect": "speed"}, {"key": "Page_11b", "image": "Page_11b.png", "title": "Ella's Brilliant Idea", "kind": "story", "act": "The Super Siblings Assemble", "text": ["Ella peeked around the corner.", "\"But what are we going to do?\" she asked. \"He's a grown-up! We can never defeat a grown-up!\"", "Luke put his hand on Ella's shoulder.", "\"You can do it, Ella,\" he said. \"You're Cheetah Girl! And we're right here to help you.\"", "Ella looked at Uncle Cha Cha, who was already yawning.", "Then she smiled.", "She had a PLAN!", "\"If he wants everyone to be tired,\" she whispered, \"let's make HIM the tiredest of all!\""], "effect": "idea", "nextEffect": "turn"}, {"key": "Page_12", "image": "Page_12.png", "title": "Operation: Distract Cha Cha!", "kind": "story", "act": "The Great Cheetah Chase", "text": ["\"First,\" whispered Ella, \"we need a distraction!\"", "Just then, Blake and Connie gave Uncle Cha Cha their biggest, goofiest smiles.", "\"GAAAA-BA-BA-BA!\" they squealed.", "Uncle Cha Cha stopped in his tracks.", "\"Well, aren't YOU the cutest little—\"", "ZOOM!", "Cheetah Girl raced past in a flash of yellow!", "\"HEY!\" shouted Cha Cha.", "\"GET BACK HERE! NO RUNNING! NO PLAYING!\"", "And just like that, the chase was ON!"], "effect": "babies", "nextEffect": "turn"}, {"key": "Page_13", "image": "Page_13.png", "title": "The Great Cheetah Chase!", "kind": "story", "act": "The Great Cheetah Chase", "text": ["\"BET YOU CAN'T CATCH ME!\" laughed Cheetah Girl.", "\"OH YES I CAN!\" huffed Uncle Cha Cha.", "Around the fountain!", "Through the park!", "Past the playground!", "ZOOM! ZOOM! ZOOOOOM!", "Ella ran faster and faster.", "Cha Cha ran slower and slower.", "And while Cha Cha was busy chasing Ella, Luke quietly snuck toward the Nap-inator.", "\"WAIT... UP...\" Cha Cha panted.", "\"I... JUST... NEED... A... LITTLE...\"", "YAAAAAAAWN!"], "effect": "chase", "nextEffect": "turn"}, {"key": "Page_14a", "image": "Page_14a.png", "title": "Sweet Dreams, Evil Cha Cha!", "kind": "story", "act": "The Great Cheetah Chase", "text": ["Finally, Uncle Cha Cha stumbled onto a park bench.", "\"I... almost... caught... youuuuu...\"", "His eyes closed.", "His head drooped.", "ZZZZZZZZZZ!", "The Evil Cha Cha was ASLEEP!", "Ella gave Luke the signal.", "\"NOW, LUKE!\"", "With one mighty pull, Luke used his super strength to SNAP OFF the Nap-inator's giant switch!", "CRAAAAACK!"], "effect": "break", "nextEffect": "turn"}, {"key": "Page_14b", "image": "Page_14b.png", "title": "Giggle Boom Saves the Day!", "kind": "story", "act": "The Great Cheetah Chase", "text": ["The sleepy purple waves disappeared!", "\"QUINN! SUPER GIGGLE!\" shouted Ella.", "GIGGLE BOOOOOOM!", "The whole town woke up laughing!"], "effect": "giggle", "nextEffect": "turn"}, {"key": "Page_15", "image": "Page_15.png", "title": "The Fastest Hero in Town!", "kind": "story", "act": "Playtime Is Saved!", "text": ["The playground was full of laughter again!", "The children cheered.", "The puppies barked.", "And everyone shouted...", "\"HOORAY FOR CHEETAH GIRL!\"", "Luke gave Ella a big hug.", "Quinn bounced with excitement.", "Blake and Connie gave one more happy squeal.", "Ella flashed her biggest toothless grin.", "She might have lost a tooth...", "But she'd gained the speed to save the whole town!", "And Uncle Cha Cha?", "Well...", "He was still asleep on that park bench.", "SNOOOOOOORE!", "THE END... OR IS IT?"], "effect": "celebrate", "nextEffect": "turn"}];
+const q=(s)=>document.querySelector(s);
+const artZone=q('#artZone'),artImg=q('#artImg'),vfx=q('#vfx'),prose=q('#prose'),hotspotWrap=q('#hotspots'),hint=q('#hint');
+let pageIndex=0,lap=0,magicUsed={},transitionTimer=0,vfxTimer=0,coverRevealed=false;
+const oldIndex=()=>pageIndex;
+function fmt(s){let str=s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); if(str==='THE END... OR IS IT?')return '<span class="ending">'+str+'</span>';if(/^[A-Z][A-Z\s!?.—0-9]+$/.test(s)&&s.length>3)return '<span class="dramatic">'+str+'</span>';return str.replace(/\b([A-Z]{3,}(?:[ -][A-Z]{3,})*)\b/g,'<strong class="shout">$1</strong>');}
+function makeHot(label,x,y,w,h,onClick){const b=document.createElement('button');b.className='hotspot';b.setAttribute('aria-label',label);b.title=label;b.style.left=x+'%';b.style.top=y+'%';b.style.width=w+'%';b.style.height=h+'%';b.onclick=onClick;hotspotWrap.append(b);return b;}
+function addButton(label, fn){let b=document.createElement('button');b.className='magic-btn';b.textContent=label;b.onclick=fn;hint.appendChild(b);}
+function addText(t){let s=document.createElement('span');s.textContent=t;hint.appendChild(s);}
+function flash(type){artZone.classList.remove('speed','turn','transform','bounce','happy','charge','shake','yawn','sleepyGlow');void artZone.offsetWidth;if(type)artZone.classList.add(type);clearTimeout(transitionTimer);transitionTimer=setTimeout(()=>artZone.classList.remove(type),980);}
+function clearVFX(){clearTimeout(vfxTimer);vfx.replaceChildren();artZone.classList.remove('dim');}
+function effect(type){clearVFX();const el=(name,cl)=>{const n=document.createElement('div');n.className=cl||name;vfx.append(n);return n};
+ if(type==='sparkles'||type==='magic'||type==='confetti'){let count=type==='confetti'?95:27;for(let i=0;i<count;i++){let n=el('spark',type==='confetti'?'confetti':'spark');if(type==='confetti'){n.style.left=((i*37.7)%100)+'%';n.style.background=['#ffd139','#8d3ace','#f277ce','#ffffff'][i%4];n.style.animationDelay=(i%14)*.07+'s';}else{n.textContent=['✦','✧','★','✶'][i%4];n.style.left=((i*37.7)%95+2)+'%';n.style.top=((i*19.7)%66+16)+'%';n.style.color=['#ffe077','#aa55ec','#fff','#f8bd39'][i%4];n.style.animationDelay=(i%9)*.09+'s';}}}
+ if(type==='rings')for(let i=0;i<3;i++)el('ring');
+ if(type==='waves')for(let i=0;i<3;i++)el('wave');
+ if(type==='sleepies'){[[10,49,30],[27,51,34],[48,34,28],[67,44,34],[84,38,30],[90,70,40],[76,58,30],[18,58,26]].forEach((a,i)=>{let n=el('zzz','zzz-pop');n.textContent=i%3===0?'Zzz':(i%2===0?'zzz':'ZZZ');n.style.left=a[0]+'%';n.style.top=a[1]+'%';n.style.fontSize='clamp(18px,'+a[2]/10+'vw,'+(a[2]+14)+'px)';n.style.animationDelay=(i*.06)+'s'});return;}
+ if(type==='lukePower'){[[15,20],[34,18],[28,33]].forEach((a,i)=>{let n=el('burst','power-burst');n.style.left=a[0]+'%';n.style.top=a[1]+'%';n.style.animationDelay=(i*.08)+'s'});return;}
+ if(type==='quinnWaves'){[[78,42,7,11,'#b544f3'],[83,42,8.5,13,'#ffb03a'],[88,42,10,15,'#b544f3']].forEach((a,i)=>{let n=el('qwave','quinn-wave');n.style.left=a[0]+'%';n.style.top=a[1]+'%';n.style.width=a[2]+'%';n.style.height=a[3]+'%';n.style.borderColor=a[4];n.style.animationDelay=(i*.06)+'s'});return;}
+ if(type==='babyCute'){[[11,59],[27,59]].forEach((center,j)=>{[[-6,-7,7,'-35deg'],[0,-12,7,'-90deg'],[6,-7,7,'35deg'],[-8,3,7,'-20deg'],[8,3,7,'20deg']].forEach((a,i)=>{let n=el('ray','baby-ray');n.style.left=(center[0]+a[0])+'%';n.style.top=(center[1]+a[1])+'%';n.style.width=a[2]+'%';n.style.transform='translate(-50%,-50%) rotate('+a[3]+')';n.style.animationDelay=(i*.05+j*.09)+'s'});});return;}
+ if(type==='babyDistract'){[[22.5,60.5],[37.3,60.5]].forEach((center,j)=>{[[-6,-7,8,'-35deg'],[0,-12,8,'-90deg'],[6,-7,8,'35deg'],[-8,2.5,7,'-18deg'],[8,2.5,7,'18deg']].forEach((a,i)=>{let n=el('ray','baby-ray');n.style.left=(center[0]+a[0])+'%';n.style.top=(center[1]+a[1])+'%';n.style.width=a[2]+'%';n.style.transform='translate(-50%,-50%) rotate('+a[3]+')';n.style.animationDelay=(i*.05+j*.09)+'s'});});return;}
+ if(type==='speed')for(let i=0;i<3;i++)el('streak');
+ if(type==='boom'){effect('rings');let n=el('label','burst-label');n.textContent='GIGGLE BOOOOM!';return;}
+ if(type==='machineBoom'){const n=document.createElement('img');n.className='boom-overlay';n.src='assets/comic_book_boom_explosion_burst.png';n.alt='Comic book BOOM explosion';n.decoding='async';vfx.append(n);return;}
+ if(type==='label'){let n=el('label','yawn-bubble');n.textContent='YAAAAAWN!';}
+ if(type==='pawThought'){
+  const n=el('thought','paw-thought');
+  n.innerHTML='<svg viewBox="0 0 160 178" role="img" aria-label="A light bulb containing a paw print" xmlns="http://www.w3.org/2000/svg"><g stroke="#47186d" stroke-width="6" stroke-linejoin="round"><path fill="#ffd44a" d="M80 12 C40 12 18 42 22 76 C25 102 45 112 52 132 L108 132 C115 110 135 101 138 76 C142 40 117 12 80 12 Z"/><rect x="54" y="132" width="52" height="13" rx="5" fill="#9b53cb"/><rect x="59" y="145" width="42" height="12" rx="5" fill="#9b53cb"/><path d="M68 160 Q80 170 92 160" fill="none" stroke-linecap="round"/></g><g fill="#48166a"><ellipse cx="47" cy="76" rx="10" ry="13" transform="rotate(-19 47 76)"/><ellipse cx="69" cy="58" rx="10" ry="13" transform="rotate(-8 69 58)"/><ellipse cx="94" cy="57" rx="10" ry="13" transform="rotate(13 94 57)"/><ellipse cx="114" cy="77" rx="10" ry="13" transform="rotate(25 114 77)"/><path d="M80 79 C64 79 61 91 53 101 C46 111 51 124 64 123 C71 122 74 116 80 116 C88 116 93 124 103 123 C115 123 120 110 110 100 C99 85 98 79 80 79Z"/></g><path d="M62 33 Q80 24 98 33" fill="none" stroke="#fff7bc" stroke-width="6" stroke-linecap="round"/></svg>';
+ }
+ if(type==='lap'){let n=el('lap');n.textContent='ZOOM! '+lap+' / 3';}
+ vfxTimer=setTimeout(()=>{vfx.replaceChildren()},type==='confetti'?2600:1750);
+}
+function jump(i, mode){const next=Math.min(Math.max(i,0),pages.length-1);if(next===0 && pageIndex!==0)coverRevealed=false;const old=pages[pageIndex];pageIndex=next;lap=0;clearVFX();const target=pages[pageIndex];render();let trans=mode||old?.nextEffect||(old?.act&&old.act!==target.act?'turn':'turn');if(pageIndex===0)trans='turn';flash(trans==='speed'?'speed':trans==='transform'?'transform':'turn');}
+function action(name){const p=pages[pageIndex];switch(name){
+ case 'whoops':flash('bounce');effect('sparkles');break;
+ case 'zoom':effect('speed');flash('charge');setTimeout(()=>{if(pages[pageIndex]===p)jump(pageIndex+1,'transform')},490);break;
+ case 'reveal':flash('speed');effect('speed');break;
+ case 'yawn':flash('yawn');effect('label');break;
+ case 'sleep':effect('waves');artZone.classList.add('dim');break;
+ case 'waves':effect('waves');break;
+ case 'sleepies':flash('sleepyGlow');effect('sleepies');break;
+ case 'lukePower':flash('charge');effect('lukePower');break;
+ case 'quinnWaves':flash('happy');effect('quinnWaves');break;
+ case 'babyCute':flash('happy');effect('babyCute');break;
+ case 'discover':flash('happy');effect('sparkles');break;
+ case 'recruit':effect('sparkles');setTimeout(()=>{if(pages[pageIndex]===p)jump(pageIndex+1,'transform')},460);break;
+ case 'team':flash('charge');effect('sparkles');break;
+ case 'dash':effect('speed');jump(pageIndex+1,'speed');break;
+ case 'idea':effect('pawThought');break;
+ case 'babies':flash('happy');effect('babyDistract');break;
+ case 'chase':lap=Math.min(lap+1,3);flash('speed');effect('speed');setTimeout(()=>{if(pages[pageIndex]===p){let e=document.createElement('div');e.className='lap';e.textContent=lap===3?'Cha Cha is EXHAUSTED!':'ZOOM! Lap '+lap+' of 3';vfx.append(e);setTimeout(()=>e.remove(),1300)}},250);break;
+ case 'break':flash('shake');effect('machineBoom');break;
+ case 'giggle':flash('happy');effect('boom');break;
+ case 'celebrate':effect('confetti');break;
+ }}
+function startCover(){if(coverRevealed){jump(1);return;}coverRevealed=true;const shell=q('#bookShell');shell.classList.remove('cover-revealed');void shell.offsetWidth;shell.classList.add('cover-revealed');q('#coverPrompt').textContent='✦ Tap a hero to meet them!';}
+function render(){const p=pages[pageIndex];q('#section').hidden=p.kind==='story';q('#title').hidden=p.kind==='story';q('#bookShell').classList.toggle('illustration-only',p.key==='Page_11a');q('#bookShell').classList.toggle('is-cover',p.kind==='cover');q('#bookShell').classList.toggle('cover-revealed',p.kind==='cover' && coverRevealed);artImg.src='assets/'+p.image;artImg.alt=p.title+' illustration';q('#title').textContent=p.title;q('#section').textContent=p.kind==='cover'?'A SUPER-SPEED STORYBOOK':p.kind==='character'?'MEET THE CHARACTERS':p.act;prose.replaceChildren();p.text.forEach(t=>{const para=document.createElement('p');para.innerHTML=fmt(t);prose.append(para)});prose.scrollTop=0;hotspotWrap.replaceChildren();hint.replaceChildren();q('#coverPrompt').hidden=p.kind!=='cover';if(p.kind==='cover')q('#coverPrompt').textContent=coverRevealed?'✦ Tap a hero to meet them!':'✦ Click to Start!';
+ if(p.kind==='cover'){q('#title').textContent='';q('#section').textContent='';
+ // Cover character hotspots: face-focused coordinates, percentages of the 16:9 illustration.
+ makeHot('Meet Luke',15.5,42.5,11,19,()=>jump(2));
+ makeHot('Meet Cheetah Girl',39,31,17,30,()=>jump(1));
+ makeHot('Meet Quinn',64,44,12,20,()=>jump(3));
+ makeHot('Meet Blake',75,68,11,18,()=>jump(4));
+ makeHot('Meet Connie',85,68,12,18,()=>jump(4));
+ makeHot('Meet Evil Cha Cha',67.5,15,10,19,()=>jump(5));
+ }else if(p.kind==='character'){addText('The adventure begins after the introductions.');addButton('✦ Meet the next hero',()=>jump(pageIndex+1));}
+ else{
+ const effects={whoops:['💫 WHOOPS!','Tap to make a playful bounce'],zoom:['⚡ ZOOM!','Tap to transform Ella'],reveal:['⚡ SUPER SPEED!','Tap to see Ella’s speed'],yawn:['🥱 Giant yawn','Tap Cha Cha'],sleep:['🌙 Flip the switch','Tap the switch'],sleepies:['😴 Sleepy Zzzs','Tap Ella'],recruit:['✨ Transform the team!','Tap to reveal the superheroes'],dash:['💨 Super sibling dash','Tap to zoom into the park'],idea:['🐾 Ella has a plan!','Tap Ella'],babies:['👶 Baby distraction!','Tap the babies'],chase:['⚡ ZOOM!','Tap three times to race'],break:['💥 BOOM!','Tap the machine'],giggle:['😂 GIGGLE BOOM!','Tap Quinn'],celebrate:['🎉 HOORAY!','Celebrate Ella’s victory']};
+ const hotspots={whoops:[[9,64,23,31]],zoom:[[18,19,44,70]],reveal:[[13,9,58,86]],yawn:[[38,25,35,53]],sleep:[[47.6,51.4,7.9,13.3]],sleepies:[[17,28,22,23]],recruit:[[59,19,36,73]],dash:[[15,25,66,69]],idea:[[22,24,32,65]],babies:[[13,41,32,36]],chase:[[30,25,50,70]],break:[[19,14,25,48]],giggle:[[58,31,30,59]],celebrate:[[18,29,45,65]]};
+ if(p.key==='Page_10b'){
+   hint.replaceChildren();
+   addButton('💪 Luke Power!',()=>action('lukePower'));
+   addButton('🔊 Quinn Giggle!',()=>action('quinnWaves'));
+   addButton('✨ Baby Cuteness!',()=>action('babyCute'));
+   addText("Tap each face to see that hero's power. Optional");
+   makeHot('Luke power',11,7,18,18,()=>action('lukePower'));
+   makeHot('Quinn power',67,14,16,20,()=>action('quinnWaves'));
+   makeHot('Baby Blake cuteness',1,46,13,17,()=>action('babyCute'));
+  makeHot('Baby Connie cuteness',20,47,13,17,()=>action('babyCute'));
+ } else {
+   let row=effects[p.effect];
+   if(row){addButton(row[0],()=>action(p.effect));addText(row[1]+' · Optional');}
+   (hotspots[p.effect]||[]).forEach((a,i)=>makeHot((row?row[0]:'Magic').replace(/^[^A-Za-z]+/,''),...a,()=>action(p.effect)));
+ }
+ if(p.effect==='celebrate')addButton('↻ Read Again',()=>jump(0));
+ }
+ q('#prevBtn').disabled=pageIndex===0;q('#nextBtn').disabled=pageIndex===pages.length-1;q('#nextBtn').textContent=pageIndex===0?'Meet the Heroes ❯':pageIndex===5?'Start the Story ❯':pageIndex===pages.length-1?'The End ✓':'Next ❯';q('#footerMid').textContent=p.kind==='cover'?'A bedtime adventure with Ella & her family':p.kind==='character'?'MEET THE HEROES · '+pageIndex+' / 5': 'THE ADVENTURE · '+(pageIndex-5)+' / 17';
+}
+q('#prevBtn').onclick=()=>jump(pageIndex-1);q('#nextBtn').onclick=()=>jump(pageIndex+1);q('#homeBtn').onclick=()=>jump(0);q('#charsBtn').onclick=()=>jump(1);q('#coverPrompt').onclick=()=>startCover();
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&!q('#nextBtn').disabled){e.preventDefault();jump(pageIndex+1)}else if(e.key==='ArrowLeft'&&!q('#prevBtn').disabled){e.preventDefault();jump(pageIndex-1)}});
+render();
+</script></body></html>
